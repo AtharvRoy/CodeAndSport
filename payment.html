@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7952b3">
+    <link rel="stylesheet" href="style/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="style/all.min.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="style/slick.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="style/animate.css" type="text/css" media="all">
+
+	<link rel="stylesheet" href="style/style.css" type="text/css" media="all">
+    <title>Payment</title>
+    <style>
+    .container{
+        max-width: 960px;
+    }
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class=" d-block mx-auto mb-4" src="svg/price-1.svg" alt="Pricing Image" width="72" height="72">
+
+        <h2>Checkout form</h2>
+        <p class="lead">Below is an example form built entirely with bootstrap</p>
+    
+    </div>
+
+    <div class="row g-3">
+        <div class="col-md-5 col-lg-4 order-md-last">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Your cart</span>
+                <span class="badge bg-secondary rounded-pill">1</span>
+            </h4>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm"></li>
+                <div>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-muted">Brief description</small>
+                </div>
+                <span class="text-muted">₹2,180</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (INR)</span>
+                    <strong>₹2,180</strong>
+                </li>
+            </ul>
+            <form class="card p-2">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Promo code">
+                  <button type="submit" class="btn btn-secondary">Redeem</button>
+                </div>
+              </form>
+        </div>
+    
+    <div class="col-md-7 col-lg-8">
+    <h4 class="mb-3">Billing Address</h4>
+    <form class="needs-validation" novalidate>
+        <div class="row g-3">
+        <div class="col-sm-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Your First Name" required>
+            <div class="invalid-feedback">
+                Valid first Name is required
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+                Valid Last Name is required
+            </div>
+        
+        <div class="col-12">
+            <label for="Username" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="username" placeholder="Jsmith" required>
+            </div>
+        <div class="invalid-feedback">
+            Valid Username is required
+        </div>
+        </div>
+        </div>
+
+        <div class="col-12">
+            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="Your email address">
+        </div>
+        </div>
+        <div class="col-12">
+            <label for="address" class="form-label">Address <span class="text-muted">(Optional)</span></label>
+            <input type="address" class="form-control" id="address" placeholder="Your address">
+        </div>
+        </div>
+        <div class="col-md-5">
+            <label for="Country" class="form-label">Country</label>
+            <select id="Country" class="form-control">
+                <option value="">Choose ...</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="USA">United states of America</option>
+                <option value="UK">United Kingdom</option>
+                </select>
+        <div class="invalid-feedback">
+            Valid Country is required
+        </div>
+        </div>
+        <div class="col-md-4">
+            <label for="State" class="form-label">State</label>
+            <select id="State" class="form-control">
+                <option value="">Choose ...</option>
+                <option value="India">Maharashtra</option>
+                <option value="Australia">Kerala</option>
+                <option value="USA">Rajhasthan</option>
+                <option value="UK">Meghalaya</option>
+        <div class="invalid-feedback">
+            Valid State is required
+        </div>
+        </div>
+        <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+        </div>
+    </div>
+    </div>
+
+    <hr class="my-4">
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="same-address">
+        <label for="save-info" class="form-check-label">Save this information</label>
+    </div>
+    </form>
+    </div>
+
+</body>
+</html>
